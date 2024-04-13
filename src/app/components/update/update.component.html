@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+            <div class="col-3">
+                <input  [(ngModel)]="hero.name"  class="form-control" type="text" placeholder="name" >
+            </div>
+            <div class="col-3">
+                <input [(ngModel)]="hero.power" class="form-control" type="text" placeholder="power" >
+            </div>
+            <div class="col-3">
+                <input (change)="selectimage($event)"  type="file" placeholder="image" >
+            </div>
+            <div class="col-3">
+                <div (click)="update()" class="btn btn-primary">Update</div>
+            </div>
+    </div>
+</div>
